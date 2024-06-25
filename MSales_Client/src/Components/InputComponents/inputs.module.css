@@ -1,0 +1,118 @@
+.errorTxt {
+  display: flex;
+  /* margin-left: 23px; */
+  /* margin-top: 10px; */
+  color: red;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.inputOutline {
+  margin-bottom: 20px;
+}
+.inputfield {
+  width: 400px;
+  height: 50px;
+}
+.title {
+  display: flex;
+  margin-left: 23px;
+  height: 10px;
+  /* margin-top: 10px; */
+  /* color: red; */
+  font-size: 15px;
+}
+.inputfielddisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputIcons {
+  margin-left: -34px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  width: 17px;
+}
+.lockicon {
+  margin-left: -34px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  width: 17px;
+}
+.keyicon {
+  margin-left: -34px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  width: 18px;
+}
+.unlockicon {
+  margin-left: -34px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  width: 20px;
+}
+.borderinput {
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid white;
+  text-overflow: ellipsis;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #00000026;
+  width: 95%;
+  text-align: left;
+  font-size: 16px !important;
+}
+.borderinput:focus {
+  box-shadow: none !important;
+  border-color: #cccccc !important;
+}
+.borderinput:active {
+  box-shadow: none !important;
+  border-color: #cccccc !important;
+}
+.borderinput:hover {
+  box-shadow: none !important;
+  border-color: #cccccc !important;
+}
+.errorText {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: 1px;
+  font-family: var(--regular);
+}
+.fieldcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.checkboxstyles {
+  font-family: var(--regular);
+  font-size: 12px;
+  color: #494c50;
+}
+
+.checklabelstyle {
+  margin-bottom: 0px !important;
+  margin-top: 1px;
+}
+.itemstyle {
+  font-family: var(--Medium);
+  color: red;
+}
+.nameInputblock {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.countrybox{
+  margin-right: 5px;
+}
+@media (max-width: 575px) {
+  .borderinput {
+    width: 100%;
+  }
+  .nameInputblock {
+    width: 100%;
+  }
+}

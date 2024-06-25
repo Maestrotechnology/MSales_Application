@@ -1,0 +1,167 @@
+.container {
+  background: linear-gradient(
+    to right,
+    var(--blue) 0%,
+    var(--blue) 50%,
+    var(--gray) 50%,
+    var(--gray) 100%
+  );
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  /* width: 185px; */
+  height: 40px;
+  margin: 20px;
+}
+.loginoutline {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginheadmsg {
+  font-size: 25px;
+  font-family: var(--Medium);
+}
+.forgotpassword {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 20px; */
+  color: var(--blue);
+  /* font-weight: 600; */
+  cursor: pointer;
+  float: right;
+  width: 100%;
+  font-family: var(--Medium);
+  font-size: 13px;
+}
+.loginButton {
+  width: 100%;
+  height: 45px;
+  padding: 5px;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 3px;
+  font-family: var(--Medium);
+}
+.otpfield {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  /* margin-bottom: 20px; */
+}
+.otpfield input,
+.otpblock input {
+  width: 45px !important;
+  height: 45px !important;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  outline: unset;
+  color: #404949;
+  font-family: var(--Medium);
+  text-align: center;
+}
+.errorTxt {
+  display: flex;
+  margin-left: 23px;
+  /* margin-top: 10px; */
+  color: red;
+  font-family: var(--regular);
+  font-size: 13px;
+}
+.resendotp {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 30px; */
+  color: #0161c7;
+  cursor: pointer;
+  float: right;
+  /* width: 100%; */
+  font-family: var(--regular);
+  font-size: 14px;
+}
+.opttext {
+  font-family: var(--regular);
+  font-size: 14px;
+}
+.otpblock {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+/* .otpfield input,
+.otpblock input {
+  width: 40px !important;
+  height: 35px !important;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  outline: unset;
+  color: #404949;
+  font-family: var(--Medium);
+  text-align: center;
+} */
+@media (max-width: 575px) {
+  .loginoutline {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .otpfield input,
+  .otpblock input {
+    width: 45px !important;
+    height: 45px !important;
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    outline: unset;
+    color: #404949;
+    font-family: var(--Medium);
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .otpfield {
+    margin: 10px 0px;
+  }
+  .otpinputblock {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 450px) {
+  .loginoutline {
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+  }
+  .otpfield input {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+@media (max-width: 350px) {
+  .otpfield input {
+    width: 35px !important;
+    height: 40px !important;
+  }
+  .loginheadmsg {
+    font-size: 20px;
+  }
+}

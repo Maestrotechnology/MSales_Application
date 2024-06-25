@@ -1,0 +1,70 @@
+.cardbanner {
+    height: 170px;
+    /* width: 300px; */
+    width: 100%;
+    transition: 2s ease;
+    overflow: hidden;
+  }
+  .carddata:hover .cardbanner {
+    transform: scale(1.1);
+    overflow: hidden;
+  }
+  .cartactions {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    opacity: 0;
+    transition: 1.2s ease;
+  }
+  .carddata:hover .cartactions {
+    opacity: 1;
+  }
+  .wishlist {
+    padding: 7px;
+    background: #ffb2b2;
+    color: black;
+    /* box-shadow: 1px 1px 3px 0px #888888; */
+    border-radius: 4px;
+  }
+  
+  .view {
+    padding: 7px;
+    background: #ffc49b;
+    color: black;
+    /* box-shadow: 1px 1px 3px 0px #888888; */
+    border-radius: 4px;
+  }
+  .reset {
+    padding: 7px;
+    background: #a7e0f5;
+    color: black;
+    /* box-shadow: 1px 1px 3px 0px #888888; */
+    border-radius: 4px;
+  }
+  .wishlist:hover {
+    color: red;
+  }
+  .view:hover {
+    color: orangered;
+  }
+  .reset:hover {
+    color: #006080;
+  }
+  .title {
+    color: crimson;
+    font-family: var(--Medium);
+    font-size: 14px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
+  .discription {
+    font-family: var(--Regular);
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }

@@ -1,0 +1,644 @@
+@font-face {
+  font-family: "heading";
+  src: url("../../Asserts/Fonts/Poppins/Poppins-Regular.ttf");
+}
+.background {
+  width: 100%;
+  min-height: calc(100vh - 55px);
+  background-color: #f5f5f6;
+}
+.dashboardboxoutline {
+  width: 238px;
+  height: 150px;
+  background-color: #ffffff;
+  position: relative;
+  /* margin: 25px; */
+  border-radius: 33px;
+}
+
+.dashboardbackground {
+  width: 100%;
+  position: absolute;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  /* height: 201px; */
+}
+.dashboardboxdisplay {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+  cursor: pointer;
+  gap: 20px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+.dashboardvalue {
+  /* position: absolute; */
+  z-index: 1;
+  margin: 20px;
+  font-family: "heading";
+}
+.dashboardname {
+  display: flex;
+  z-index: 1;
+  font-family: "heading";
+  /* position: relative; */
+  justify-content: center;
+  bottom: 25px;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+}
+
+/* dashboard card */
+.cardhead {
+  font-family: var(--Medium);
+  font-size: 17px;
+}
+.cardbody {
+  /* width: 238px; */
+  height: 170px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  /* margin: 25px; */
+  border-radius: 34px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px 0px #cdcdcd4a;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+  justify-content: space-between;
+  overflow: hidden;
+}
+.cardicon {
+  display: flex;
+  width: 33px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 33px;
+}
+.iconcard {
+  width: 18px;
+}
+.countblock {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  gap: 10px;
+}
+.cardheadblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardcount {
+  font-family: var(--Medium);
+  font-size: 22px;
+  z-index: 1;
+}
+.cartcountblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cardlistcount {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  font-family: var(--Medium);
+  font-size: 15px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  /* background: orange; */
+  border-radius: 50%;
+  justify-content: center;
+}
+.cardlistname {
+  margin-bottom: 0px;
+  font-family: var(--Medium);
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  color: #484751;
+}
+.tableviewicon {
+  width: 20px;
+  height: 21px;
+  /* margin-right: 10px; */
+  cursor: pointer;
+}
+.tableediticon {
+  /* margin-right: 10px; */
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.tabledeleteicon {
+  height: 14px;
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+.tablewhatsappicon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+.tableChangepassword {
+  height: 17px;
+  cursor: pointer;
+}
+.searchOption {
+  /* margin-left: 20px; */
+  margin: 0px 20px 10px 20px;
+  /* transition: 1s ease-in-out; */
+
+  /* width: 100%; */
+}
+
+.usertypeheader {
+  display: flex;
+  font-family: var(--regular);
+}
+.label {
+  margin-bottom: 0px;
+  width: fit-content;
+  text-transform: capitalize;
+  color: #494c50;
+  font-family: var(--Medium);
+  font-size: 15px;
+  min-height: 0px;
+  margin-top: 0px;
+  text-align: left;
+}
+.user_type_radio {
+  display: flex;
+  margin-bottom: 15px;
+}
+.map_icon {
+  width: 15px;
+}
+
+.chartbackground {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.usertypecheckbox {
+  display: flex;
+  align-items: flex-start;
+  min-width: 270px;
+}
+
+.btnactionblock {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 10px; */
+  /* margin: 10px; */
+}
+.leadsaction {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.chartoutline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.chartbackground {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  /* width: 1000px; */
+}
+.reportheader {
+  font-family: var(--semiBold);
+}
+.mapdisplay {
+  display: flex;
+  justify-content: center;
+}
+.mapbackground {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.mapsize {
+  width: 100%;
+  background-color: #ffffff;
+}
+.tableaction {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.transfericon {
+  height: 16px;
+  cursor: pointer;
+  /* margin-right: 10px; */
+  width: 16px;
+}
+.namecell {
+  min-width: 100px;
+  max-width: 250px;
+}
+.personcell {
+  min-width: 100px;
+  max-width: 250px;
+}
+.emailcell {
+  min-width: 100px;
+  max-width: 250px;
+}
+
+.dashboardchartutline {
+  background-color: #ffffff;
+  margin: 5px 20px;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.Linechartutline {
+  background-color: #ffffff;
+  margin: 20px 20px;
+  border-radius: 10px;
+  padding: 15px 5px;
+}
+.dashboardmap {
+  /* width: 100%; */
+  /* padding: 30px; */
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 20px;
+  /* padding: 20px 0px; */
+}
+.chartdisplay {
+  display: flex;
+  /* padding: 0px 20px 20px; */
+  justify-content: space-between;
+}
+.filterdisply {
+  display: flex;
+  cursor: pointer;
+}
+.dashboardtablefilter {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.filter_icon {
+  width: 20px;
+  height: 20px;
+}
+.filterdisply h6 {
+  margin-right: 5px;
+  font-family: "heading";
+}
+
+.contentbackground {
+  margin: 0px 20px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+.dashreportHead {
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  width: 80%;
+  flex-flow: wrap;
+}
+
+@media (max-width: 200px) {
+  .usertypecheckbox {
+    display: flex;
+    align-items: flex-start;
+    min-width: 170px;
+  }
+}
+@media (max-width: 575px) {
+  /* .dashboardmap {
+    width: 100%;
+    padding: 30px;
+    display: block;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: 10px;
+  } */
+  .cardbody {
+    width: 100%;
+  }
+  .cardlistcount {
+    font-size: 20px;
+  }
+  .cardlistname {
+    font-size: 17px;
+  }
+  .dashboardbackground {
+    height: 150px;
+  }
+  /* .dashboardboxdisplay {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+  } */
+  .cardbody {
+    width: 100%;
+  }
+  .cardlistcount {
+    font-size: 20px;
+  }
+  .cardlistname {
+    font-size: 16px;
+  }
+  .dashboardbackground {
+    height: 150px;
+  }
+  .chartbackground {
+    width: 92%;
+  }
+}
+@media (max-width: 1100px) {
+  .dashboardmap {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .dashboardmap {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dashboardboxdisplay {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .leadsaction {
+    width: 99%;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .dashboardboxdisplay {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .dashboardboxdisplay {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 800px) and (max-width: 1100px) {
+  .dashboardboxdisplay {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .dashboardboxdisplay {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .DailyReportChart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .dashboardboxdisplay {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .DailyReportChart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.mediadisplay {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+  /* justify-content: space-around; */
+}
+.mediafilevideo {
+  width: 300px;
+  /* height: 300px; */
+  margin: 10px;
+}
+.mediaImageFile {
+  width: 270px;
+  height: 145px;
+  /* height: 300px; */
+  margin: 10px;
+}
+.mediaimageoutline {
+  border-radius: 7px;
+  width: 290px;
+  height: 207px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.ImageDownLoad {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* margin: 10px; */
+}
+.cartactions {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  opacity: 0;
+  transition: 1.2s ease;
+}
+.cardbanner:hover.cartactions {
+  opacity: 1;
+}
+.cardbanner {
+  height: 250px;
+  /* width: 300px; */
+  width: 100%;
+  transition: 2s ease;
+  overflow: hidden;
+}
+/* .carddata:hover .cardbanner {
+  transform: scale(1.2);
+  overflow: hidden;
+} */
+
+.mediadownloadicon {
+  width: 16px;
+  height: 15px;
+}
+.mediadeleteicon {
+  width: 16px;
+  height: 15px;
+}
+.mediaicon {
+  background: #d9d9d9;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.mediaVideodisplay {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.videoTextIcon {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.tableBoxsize {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.textalign {
+  text-align: center !important;
+}
+.tabledata {
+  text-align: center;
+}
+.uploadText {
+  margin-bottom: 3px;
+  width: 90%;
+  text-transform: capitalize;
+  color: #494c50;
+  font-family: var(--Medium);
+  font-size: 14px;
+  min-height: 0px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.fileupload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filebox {
+  box-shadow: 0px 0px 1px 1px #ccd7f394;
+  border-radius: 5px;
+  padding: 10px;
+  width: 95%;
+  display: flex;
+
+  margin: 10px;
+
+  flex-direction: column;
+}
+.fileicon {
+  width: 45%;
+  height: 70px;
+  /* display: none; */
+  /* height: 30px; */
+}
+
+.fileviewblock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fileactionblock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.uploadicon {
+  width: 14px;
+}
+.deleteicon {
+  width: 17px;
+}
+.uploadbtn {
+  width: 27px;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  outline: none;
+  padding: 3px 5px;
+
+  background-color: #004c97;
+}
+.deletebtn {
+  width: 27px;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  outline: none;
+  padding: 3px 5px;
+
+  background-color: #bf1c17;
+}
+.filename {
+  font-family: var(--regular);
+  font-size: 14px;
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.MobileNumberBtn {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 10px;
+  /* margin: 10px; */
+}
+
+.viewLabelRowContainer{
+  width: 400px;
+  max-width: 100%;
+}
+
+.viewLabelRowContainer>h6{
+  font-weight: 600;
+}
+.DailyReportChart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}

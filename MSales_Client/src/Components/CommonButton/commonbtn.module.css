@@ -1,0 +1,115 @@
+.subhead {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--Regular);
+  text-transform: capitalize;
+  margin: 15px 2px;
+  color: #1d1d1d;
+  /* border-left: 2px solid orangered; */
+}
+.subhead::before {
+  content: "";
+  border: 2px solid orangered;
+  margin-right: 5px;
+}
+.searchicon {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.searchbtn {
+  color: white;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-family: var(--Medium);
+  background-color: var(--gray);
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.itemsperpage {
+  float: right;
+  /* background: transparent; */
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  height: 30px !important;
+  border-radius: 0px;
+  font-family: var(--Regular);
+  border: 1px solid #8080804f;
+  width: 95%;
+}
+.itemsperpage > .ant-select-selector {
+  font-size: 14px !important  ;
+}
+.itemsperpage:focus {
+  box-shadow: none !important;
+  border-color: #43bcff !important;
+}
+.itemsperpage:hover {
+  box-shadow: none !important;
+  border-color: #43bcff !important;
+}
+.subheadblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.itemspage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  gap: 5px;
+}
+.itemsstyle {
+  font-family: var(--Regular);
+  color: #1d1d1d;
+  font-size: 14px;
+}
+.commonbutton {
+  min-width: 120px;
+  margin-bottom: 2px;
+  height: 35px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: var(--Medium);
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.downLoad {
+  color: #ef501d;
+  /* border: 0.5px solid #00000040; */
+  /* background: white; */
+  /* padding: 5px 7px; */
+  border-radius: 4px;
+  margin-right: 20px;
+}
+@media (max-width: 300px) {
+  .commonbutton {
+    /* min-width: 100px; */
+    width: 100%;
+    margin-bottom: 2px;
+    height: 35px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--Medium);
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+}

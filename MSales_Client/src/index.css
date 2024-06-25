@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  /* background-color: #f5f5f6; */
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("./Asserts/Fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("./Asserts/Fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("./Asserts/Fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Light";
+  src: url("./Asserts/Fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "heading5";
+  src: url("../src/Asserts/Fonts/Poppins/Poppins-SemiBold.ttf");
+}
+:root {
+  --blue: #00659d;
+  --gray: #717171;
+  --regular: "Regular";
+  --Medium: "Medium";
+  --Bold: "Bold";
+  --Light: "Light";
+  --semiBold: "heading5";
+}
+.rowend {
+  row-gap: 10px;
+  width: 100%;
+  /* align-items: flex-end; */
+}
+.rowTop {
+  row-gap: 10px;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-items: flex-start;
+  /* align-items: flex-end; */
+}
+.label {
+  margin-bottom: 5px;
+  width: 90%;
+  text-transform: capitalize;
+  color: #494c50;
+  font-family: var(--Medium);
+  font-size: 14px;
+  min-height: 0px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.ant-table-thead > tr > th {
+  padding: 12px !important;
+  color: white !important;
+  font-family: var(--Medium) !important;
+  background-color: #004c97 !important;
+}
+.ant-table-cell {
+  padding: 10px !important;
+  font-family: var(--regular);
+  color: #4d4b4b;
+}
+/* .Mui-focused {
+border: 1px solid yellow !important;
+} */
+.ant-table-column-sorter {
+  display: none !important;
+}
+.ant-table-filter-trigger {
+  display: none !important;
+}
+
+/* ant d switch  */
+.ant-switch-checked {
+  background-color: #2ab95a !important;
+}
+.ant-switch {
+  background-color: #f51043;
+}
+.ant-switch-checked:hover {
+  background-color: gray !important;
+}
+.ant-select-selection-search {
+  padding-right: 20px !important;
+}
+.dark-text {
+  color: black;
+  font-weight: 600;
+}
+.required {
+  color: red;
+  font-size: 13px;
+}
+.tablesno {
+  text-align: center;
+  width: 30px;
+}
+
+@font-face {
+  font-family: "heading5";
+  src: url("../src/Asserts/Fonts/Poppins/Poppins-SemiBold.ttf");
+}
+h5 {
+  font-family: "heading5";
+}
+.apexcharts-toolbar {
+  display: none !important;
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: #004c97 !important;
+  background-color: #004c97 !important;
+}
+.ant-radio-wrapper:hover {
+  border-color: #004c97 !important;
+}
+.colwidth {
+  width: 100%;
+  /* margin-bottom: 15px; */
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #004c97 !important;
+  background-color: #004c97 !important;
+}
+.CheckinCheckout{
+  width: 175px;
+}
+/* .ant-select-selection-overflow {
+  display: flex !important;
+  overflow: auto !important;
+  height: 35px !important;
+} */
+.CheckinCheckout .ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #27e06be0 !important;
+  background-color: #27e06be0 !important;
+}
+.CheckinCheckout .ant-checkbox+span {
+color: #fff !important;
+font-weight: bold !important;
+}
+.apexcharts-legend-text {
+  margin-right: 20px !important;
+}
+.gm-fullscreen-control {
+  display: none !important;
+}
+.gm-style .gm-style-iw-c {
+  display: none !important;
+}
+.gm-style .gm-style-iw-tc::after {
+  display: none !important;
+}
+
+/* .gm-ui-hover-effect{
+  display: none !important;
+} */
+@media (max-width: 950px) {
+  .ant-table-wrapper .ant-table {
+    overflow-x: scroll !important;
+  }
+}
+
+.arrow_box {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fff; */
+  gap: 10px;
+  padding: 10px;
+  font-family: var(--regular);
+}
+.datastext {
+  font-family: var(--regular);
+  color: red;
+}
+
+.custom-tooltip {
+  background-color: #fff;
+  /* padding: 10px; */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.tooltip-header {
+  background-color: #eceff1;
+  color: #000000;
+  padding: 10px;
+  font-weight: 600;
+  font-family: var(--Medium) !important;
+}
+.tooltip-header > span {
+  color: rgba(0, 0, 0, 0.6);
+}
+.tooltip-marker {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.not-display {
+  display: none;
+}
+.tooltip-text {
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: var(--regular) !important;
+}
+/* .tooltip-name {
+  font-family: var(--Bold) !important;
+} */
+.tooltip-text span {
+  font-weight: 700;
+  padding-left: 3px;
+}
+.tooltip-text > div:nth-child(2) {
+  word-wrap: break-word;
+}
+.ant-tabs > .ant-tabs-nav {
+  margin-left: 20px !important;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #cf2027;
+}
+.ant-tabs .ant-tabs-ink-bar {
+  background-color: #cf2027;
+}
+.media .ant-tabs-tabpane-active {
+  display: flex !important;
+  margin-left: 35px !important;
+  flex-wrap: nowrap !important;
+}
+.rowblock {
+  width: 100%;
+  row-gap: 25px;
+}
+.ant-card .ant-card-body {
+  padding: 10px !important;
+}
+/* .ant-table-thead >tr>td{
+  text-align: center !important;
+}
+.ant-table-tbody >tr >td{
+  text-align: center !important;
+} */
+
+.activeTableRow {
+  background-color: #f1f1f1;
+}
+
+.missedLead{
+  background-color: #ff710059;
+}
+.missedLead>.ant-table-cell-row-hover , .leadRemainder>.ant-table-cell-row-hover{
+  background: transparent !important;
+}
+.leadRemainder{
+  background-color: #00ff6a30;
+
+}
+.cursor_pointer{
+  cursor: pointer;
+}
+.ant-upload .ant-upload-select {
+  width: 130px !important;
+}
+.subheading {
+  font-family: var(--Medium);
+  font-size: 20px;
+}
+
+/* For Select component */
+.ant-select-selection-placeholder {
+  font-size: 15px; /* Change the font size as per your requirement */
+}
+
+/* For Input component */
+.ant-input[placeholder] {
+  font-size: 15px !important; /* Change the font size as per your requirement */
+}
+
+::placeholder {
+  font-size: 15px; /* Adjust the font size as needed */
+}
+.ant-modal-body {
+  max-height: 80vh !important;
+  overflow: auto !important;
+}
+
+/* Customize scrollbar track */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Customize scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #aaa8a8; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Border radius of the scrollbar handle */
+}
+
+/* Customize scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Optionally, hide scrollbar */
+/*::-webkit-scrollbar {
+  display: none;
+}*/
+.ant-upload-wrapper .ant-upload-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+.ant-upload-wrapper
+  .ant-upload-list.ant-upload-list-picture
+  .ant-upload-list-item {
+  width: 200px !important;
+  margin: 20px;
+}
+
+/* ant select  */
+/* .ant-select-dropdown {
+  z-index: 10 !important;
+} */
+/* select field fontsize  */
+.ant-select-selection-item {
+  font-size: 15px !important;
+}
+
+.ant-pagination-item-active {
+  background: #014385 !important;
+  border-radius: 50% !important;
+  color: white;
+  border: none !important;
+}
+.ant-pagination-item:hover {
+  border-radius: 50% !important;
+}
+
+.single-line-cells td>p{
+display: -webkit-box;
+overflow: hidden;
+-webkit-box-orient : vertical ;
+-webkit-line-clamp: 1;
+}

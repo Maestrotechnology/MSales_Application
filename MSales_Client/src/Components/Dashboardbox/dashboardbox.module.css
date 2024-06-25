@@ -1,0 +1,14 @@
+.dashboardboxoutline{
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.dashboardbackground{
+    width: 300px;
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    height: 201px;
+}
